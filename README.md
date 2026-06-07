@@ -2,7 +2,7 @@
 
 A real-time network threat monitoring dashboard built with Python and Flask. Visualizes simulated security events including brute force attacks, port scans, suspicious traffic, and failed login attempts — displayed across an interactive global threat map, live charts, and a detailed event log.
 
-![Security Dashboard](screenshot-header.png)
+![Security Dashboard](screenshot-charts.png)
 
 ---
 
@@ -110,8 +110,7 @@ Each source IP is mapped to a real-world city and plotted on the global threat m
 
 ## Author
 
-Built by **Asayel Alosaimi** — Computer Engineering graduate specializing in Cybersecurity.  
-Certifications: CompTIA Security+ · eJPT · eCPPT · eWPTX · ICCA
+Built by **Asayel Alosaimi** 
 
 ---
 
