@@ -2,7 +2,7 @@
 
 A real-time network threat monitoring dashboard built with Python and Flask. Visualizes simulated security events including brute force attacks, port scans, suspicious traffic, and failed login attempts — displayed across an interactive global threat map, live charts, and a detailed event log.
 
-![Security Dashboard](screenshot-charts.png)
+![Security Dashboard](screenshot-map.png)
 
 ---
 
@@ -15,7 +15,7 @@ A real-time network threat monitoring dashboard built with Python and Flask. Vis
 - **Top Source IPs** — pie chart showing the most active source addresses
 - **Latest Events table** — full log with timestamps, IPs, event types, and severity badges
 
-![Charts and Table](screenshot-charts.png)
+
 
 ---
 
@@ -92,6 +92,7 @@ Each source IP is mapped to a real-world city and plotted on the global threat m
 
 ### Header + Global Threat Map
 ![Global Threat Map](screenshot-map.png)
+![Global Threat Map](screenshot-headr.png)
 
 ### Event Charts + Latest Events Table
 ![Dashboard Charts](screenshot-charts.png)
