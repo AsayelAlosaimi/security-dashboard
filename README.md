@@ -48,7 +48,7 @@ security-dashboard/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/security-dashboard.git
+git clone https://github.com/AsayelAlosaimi/security-dashboard.git
 cd security-dashboard
 ```
 
