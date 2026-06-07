@@ -1,0 +1,30 @@
+from flask import Flask, render_template
+import pandas as pd
+import random
+from datetime import datetime, timedelta
+
+app = Flask(__name__)
+
+def generate_fake_logs():
+    events = []
+    types = ["Failed Login", "Port Scan", "Suspicious Traffic", "Brute Force", "Normal"]
+    ips = ["192.168.1.10", "10.0.0.5", "172.16.0.3", "192.168.1.55", "10.10.10.1"]
+    
+    for i in range(50):
+        events.append({
+            "time": (datetime.now() - timedelta(minutes=random.randint(1, 120))).strftime("%H:%M:%S"),
+            "ip": random.choice(ips),
+            "event": random.choice(types),
+            "severity": random.choice(["Low", "Medium", "High"])
+        })
+    return events
+
+@app.route("/")
+def index():
+    logs = generate_fake_logs()
+    df = pd.DataFrame(logs)
+    return df.to_html()
+
+if __name__ == "__main__":
+    app.run(debug=True)
+    
